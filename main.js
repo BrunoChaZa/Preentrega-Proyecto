@@ -81,6 +81,14 @@ function pintarProductos(){
 
     producto.querySelector('button').addEventListener('click', ()=>{
 
+      Toastify({
+        text: 'Se a agregado el producto al carrito',
+        duration: 2000,
+        style: {
+          background: 'linear-gradient(to right, #C62626, #D8C2C2)'
+        }
+      }).showToast();
+
       agregarProductosAlCarrito(p.id);    
 
       localStorage.setItem('carrito', JSON.stringify(carrito));
