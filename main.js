@@ -43,7 +43,12 @@ const BBDD = [
   },
 ]
 
-const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+let carrito = [] || pintarCarrito();
+
+if (localStorage.getItem('carrito')) {
+  carrito = JSON.parse(localStorage.getItem('carrito'));
+  pintarCarrito();
+}
 
 function pintarProductos(){
 

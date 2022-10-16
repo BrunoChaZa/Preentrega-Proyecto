@@ -32,7 +32,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Argentina&lang=es&units
     cardClima.innerHTML = `
 
 <div class="clima row">
-    <h4>Clima en Kiosko Chaza</h4>
+    <h4>Clima en Kiosko Chaza =)</h4>
     <div class="col-6">
         <h6 >Temperatura: ${temperatura} °C </h6>
     </div>
