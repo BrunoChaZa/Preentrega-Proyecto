@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Permanent+Marker&family=Signika+Negative:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -6,28 +7,32 @@
     box-sizing: border-box;
     
   }
+.fondo{
+  background-color: #6DAEDB;
+  font-family: Permanent Marker;
+}  
 
 .fa-solid{
   margin: 0px;
-}
-.header {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #000;
-    background-color: #0468BF;
-    height: 100px;
-}
-header h1 {
-  margin-top: 20px;
 }
 .containerProductos{
   box-shadow: 1px 1px 1px rgb(44, 40, 40);
 
 }
+.containerNav{
+  border-bottom: #000 solid 1px;
+  margin-top: 5px;
+}
+.containerItems{
+  border-left: #000 solid 1px;
+  border-right: #000 solid 1px;
+  margin-bottom: 5px;
+}
 .titulo {
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: #000 solid 1px;
 }
 
 h1 {
@@ -38,10 +43,10 @@ h1 {
 
 .containerClima {
   margin-top: 5px;
-  border-radius: 20px;
+  border-radius: 20px;  
 }
 .containerClima:hover {
-  background-color: #2EB8BB;
+  border: #000 solid 2px;
 }
 .clima {
   text-align: center;
@@ -51,14 +56,11 @@ h1 {
   text-align: start;
 }
 
-
-
-
 .card {
   position: relative;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-  height: 500px;
+  height: 450px;
   overflow: hidden;
   width: 400px;
 }
@@ -100,38 +102,8 @@ h1 {
   font-weight: 400;
 }
 
-.details > .options h1 {
-  margin-bottom: 5px;
-}
-
-.details > .options ul {
-  list-style-type: none;
-  display: flex;
-}
-
-.details > .options ul li {
-  border-radius: 50%;
-  cursor: pointer;
-  height: 30px;
-  line-height: 30px;
-  margin-right: 5px;
-  text-align: center;
-  width: 30px;
-}
-
-.options-size > ul > li {
-  background-color: rgba(0,0,0,0.5);
-  color: #FFF;
-  font-size: .7rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  transition: background-color .3s ease-in-out;
-}
-
-
-
 .btn {
-  background-color: #b92520;
+  background-color: #2892d7;
   border-radius: 5px;
   color: #FFF;
   display: block;

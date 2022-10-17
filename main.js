@@ -41,6 +41,27 @@ const BBDD = [
     precio: 320,  
     cantidad: 1
   },
+  {
+    id: 7,
+    img : "./assets/img/satur.jpg",
+    precio: 120,
+    nombre: "Don Satur",
+    cantidad: 1
+  },
+  {
+    id: 8,
+    img : "./assets/img/manaos.jpg",
+    precio: 160,
+    nombre: "manaos",
+    cantidad: 1
+  },
+  {
+    id: 9,
+    img : "./assets/img/baggio.jpg",
+    precio: 240,
+    nombre: "baggio 1.5L",
+    cantidad: 1
+  }
 ]
 
 let carrito = [] || pintarCarrito();
@@ -169,6 +190,14 @@ function agregarProductosAlCarrito(id){
 
   function EliminarUnidadDeCarrito(id) {
 
+    Toastify({
+      text: 'Se elimino el producto correctamente',
+      duration: 2000,
+      style: {
+        background: 'linear-gradient(to right, #080708, #e6e8e6)'
+      }
+    }).showToast();
+
     carrito[id].cantidad--;
 
     if (carrito[id].cantidad === 0) {
@@ -191,7 +220,7 @@ function agregarProductosAlCarrito(id){
 
     const t = document.getElementById('total');
 
-    t.innerHTML = `<h5>Total: $${total}<h5>`
+    t.innerHTML = `<h5>Total a pagar: $${total}<h5>`
 
     localStorage.setItem('carrito',JSON.stringify(carrito));
 
