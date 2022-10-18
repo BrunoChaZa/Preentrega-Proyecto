@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Signika+Negative:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Permanent+Marker&family=Signika+Negative:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Sans+Condensed:ital,wght@0,400;1,300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
   }
 .fondo{
   background-color: #6DAEDB;
-  font-family: Permanent Marker;
+  font-family: Fira Sans Condensed;
 }  
 
 .fa-solid{
@@ -32,7 +31,12 @@
   font-size: 50px;
   margin-top: 0;
   margin-bottom: 20px;
-  border-bottom: #000 solid 1px;
+}
+.contacto a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 20px;
+  margin-left: 200px;
 }
 
 h1 {
@@ -119,4 +123,26 @@ h1 {
 .btn:hover {
 box-shadow: 0 5px 10px rgba(0,0,0,.3);
 transform: translateY(-2px);
+}
+
+.headerForm{
+  text-align: center;
+  font-size: 50px;
+  border-bottom: #000 solid 1px;
+}
+
+.cajaForm {
+  width: 1255px;
+  height: 400px;
+  margin-left: 200px;
+
+}
+.containerDatos {
+  margin: auto;
+  border: #000 solid 1px;
+  border-radius: 30px;
+  width: 1210px;
+}
+.containerDatos h1 {
+  border-bottom: #000 solid 1px;
 }
